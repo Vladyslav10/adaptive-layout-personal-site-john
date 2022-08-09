@@ -1,0 +1,142 @@
+.page-work {
+    margin: 105px 0px 58px 0px;
+
+    &__cnt {
+        max-width: 718px;
+        padding: 0px 18px;
+        margin: 0 auto;
+    }
+
+    &__title {
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 136%;
+        margin: 0px 0px 25px 0px;
+    }
+}
+
+.works {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 0px 47px 0px;
+
+    &__img {
+        flex: 0 1 37.62%;
+        margin: 0px 20px 0px 0px;
+        padding: 0px 0px 26.4% 0px;
+    }
+
+    &__info {
+        flex: 0 1 63.93%;
+        display: flex;
+        flex-direction: column;
+        &>*:not(:last-child) {
+            margin: 0px 0px 16px 0px;
+        }
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 146%;
+    }
+
+    &__row {
+        display: flex;
+        align-items: center;
+    }
+
+    &__year {
+        font-size: 18px;
+        font-weight: 900;
+        color: #fff;
+        background-color: #142850;
+        padding: 4px 10px;
+        border-radius: 16px;
+        margin: 0px 26px 0px 0px;
+    }
+
+    &__design {
+        color: #8695A4;
+        font-size: 20px;
+        line-height: 146%;
+    }
+
+    &__description {
+        font-size: 16px;
+        line-height: 146%;
+    }
+
+    &::after{
+        content:'';
+        position: absolute;
+        left: 0;
+        bottom: -3px;
+        width: 100%;
+        height: 1px;
+        background-color: #E0E0E0;
+    }
+    &:not(:last-child) {
+        margin: 0px 0px 35px 0px;
+    }
+}
+
+@media (max-width: 768px){
+    .page-work {
+        margin: 83px 0px 30px 0px;
+    
+        &__title {
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 136%;
+            margin: 0px 0px 25px 0px;
+        }
+    }
+
+    .works {
+        flex-direction: column;
+        padding: 0px 0px 17px 0px;
+        &__img {
+            min-width: 45%;
+            margin: 0px auto 17px 0px;
+            padding: 0px 0px 30% 0px;
+        }
+    
+        &__info {
+            display: flex;
+            flex-direction: column;
+            &>*:not(:last-child) {
+                margin: 0px 0px 14px 0px;
+            }
+            &>:nth-child(2) {
+                margin: 0px 0px 26px 0px;
+            }
+        }
+
+        &__title {
+            font-size: 24px;
+        }
+    
+        &__year {
+            font-size: 16px;
+            padding: 4px 14px;
+            margin: 0px 22px 0px 0px;
+        }
+    
+        &__design {
+            font-size: 16px;
+        }
+    }
+}
+
+@media (max-width: 480px){
+    .works {
+        &__img {
+            min-width: 97.64%;
+            margin: 0px 0px 17px 0px;
+            padding: 0px 0px 66.25% 0px;
+        }
+    }
+}

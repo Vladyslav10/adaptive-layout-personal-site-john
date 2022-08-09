@@ -1,0 +1,21 @@
+.footer {
+    padding: 52px 0px;
+
+    &__container {
+        max-width: 260px;
+        margin: 0 auto;
+        padding: 0px 15px;
+    }
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0px 0px 26px 0px;
+    }
+
+    &__copyright {
+        font-size: 14px;
+        text-align: center;
+    }
+}

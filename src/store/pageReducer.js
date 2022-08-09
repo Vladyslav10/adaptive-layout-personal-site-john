@@ -1,28 +1,19 @@
-const SET_TOKENS = "SET_TOKENS"
-const SET_IS_FETCHING = "SET_IS_FETCHING"
+const SET_BURGER_ACTIVE = "SET_BURGER_ACTIVE"
 
 const defaultState = {
-    tokens: [],
-    isFetching: true,
+    isActive: false,
 }
 
-export default function btcReducer(state = defaultState, action) {
+export default function pageReducer (state = defaultState, action) {
     switch (action.type) {
-        case SET_TOKENS:
+        case SET_BURGER_ACTIVE:
             return {
                 ...state,
-                tokens: action.payload,
-                isFetching: false,
-            }
-        case SET_IS_FETCHING:
-            return {
-                ...state,
-                isFetching: action.payload
+                isActive: action.payload
             }
         default:
             return state
     }
 }
 
-export const setTokens = (payload) => ({type: SET_TOKENS, payload})
-export const setIsFetching = (bool) => ({type: SET_IS_FETCHING, payload:bool})
+export const setIsActive = (bool) => ({type: SET_BURGER_ACTIVE, payload:bool})
